@@ -7,7 +7,7 @@
 function Get-DotNetFrameworkVersion
 {
     param(
-        [string]$ComputerName = $env:COMPUTERNAME
+        [string[]]$ComputerName = $env:COMPUTERNAME
     )
 
     $dotNetRegistry  = 'SOFTWARE\Microsoft\NET Framework Setup\NDP'
